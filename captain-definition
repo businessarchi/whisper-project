@@ -1,1 +1,9 @@
-{"schemaVersion": 2, "dockerfilePath": "./Dockerfile"}
+{
+  "schemaVersion": 2,
+  "dockerfilePath": "./Dockerfile",
+  "containerHttpPort": "3000",
+  "resources": {
+    "cpuCount": 4,
+    "memoryBytes": 4294967296
+  }
+}
