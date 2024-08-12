@@ -2,7 +2,10 @@ import os
 import tempfile
 from flask import Flask, request, jsonify
 import whisper
+import torch
 
+# Utiliser tous les CPUs disponibles
+torch.set_num_threads(4)
 app = Flask(__name__)
 model = whisper.load_model("base")
 
